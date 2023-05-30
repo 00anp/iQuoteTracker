@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "iQuote Tracker",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "Avnet_A_frame_rgb.png"
+    },
+    "description": "A tracker for iQuote numbers and URL's, useful for the Quote Center, Inside Sales, and Product Specialists at Avnet.",
+    "author": "Alfonso Núñez",
+    "permissions": [
+        "tabs"
+    ]
+}

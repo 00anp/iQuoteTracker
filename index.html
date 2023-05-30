@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+      <link rel="stylesheet" href="index.css">
+      <title>iQuote Tracker</title>
+    </head>
+    <body>
+      <!--Title-->
+      <h1 class="title">iQuote Tracker</h1>
+      <!--Quote type menu-->
+      <div class="all-tasks">
+        <a id="new-quotes-menu"href="#new-quotes"><h2 class="task-list-title">New Quotes</h2></a>
+        <a id="due-today-quotes-menu"href="#due-today-quotes"><h2 class="task-list-title">Due Today Quotes</h2></a>
+      </div>
+      <!--Input form-->
+      <div id="input-form">
+        <form action="">
+          <input type="text" 
+            class="input-quote"
+            id="input-el" 
+            placeholder="Input iQuote number" 
+            aria-label="Input iQuote number"/>
+        </form>
+      </div>
+      <div id="save-buttons" class="save-tasks">
+        <button id="save-iquote-btn" class="save-button">Save iQuote</button>
+        <button id="save-tab-btn" class="save-button">Save Tab</button>
+      </div>      
+      <!--Main list of todo quotes-->
+      <div class="todo-quotes">
+        <!---New Quotes example-->
+        <div id="new-quotes">
+          <div  class="todo-header">
+            <h2 class="list-title">New Quotes</h2>
+            <!-- <p class="task-count">3 Quotes remaining</p> -->
+          </div>
+          <div class="todo-body">
+            <div class="quotes">
+              <div  class="quote">
+                <ul id= "new-quotes-list">
+                  <li><input 
+                  type="checkbox"
+                  id="quote-1"/>
+                  <label for="quote-1">
+                    <span class="custom-checkbox"></span>
+                    <a>7000001-0</a></label></li>
+                </ul>  
+              </div>
+              <!---/end of todo quote-1-->
+            </div>
+          </div>
+        </div>        
+          <!---Due Today Quotes example-->
+        <div id="due-today-quotes">
+          <div  class="todo-header">
+            <h2 class="list-title">Due Today Quotes</h2>
+            <!-- <p class="task-count">3 Quotes remaining</p> -->
+          </div>
+          <div class="todo-body">
+            <div class="quotes">
+              <div class="quote">
+                <ul id= "due-quotes-list">
+                  <li><input 
+                  type="checkbox"
+                  id="quote-2"/>
+                  <label for="quote-2">
+                    <span class="custom-checkbox"></span>
+                    <a>7000002-0</a></label></li>
+                </ul>  
+              </div>
+              <!---/end of todo quote-2-->
+            </div>
+          </div>
+        </div>      
+        <!--Delete Tasks-->
+        <div id="delete-buttons" class="delete-tasks">
+            <!-- <button  class="btn delete">Clear completed quotes</button> -->
+            <button id = "delete-btn" class="btn delete">Clear list</button>
+        </div>
+      </div>
+      <script src="index.js"></script>
+    </body>
+</html>
